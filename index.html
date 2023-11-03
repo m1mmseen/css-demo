@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Frontend Styles and Demos</title>
-    <meta name="viewport" content="width=device-width initital-scale=1">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<nav class="navigation">
+    <div class="desktop-nav">
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">Gradients</a></li>
+            <li><a href="">Transitions</a></li>
+            <li><a href="">Animations</a></li>
+            <li><a href="">Transformations</a></li>
+            <li><a href="">Masks</a></li>
+        </ul>
+    </div>
+    <div class="mobil-nav">
+        <div class="mobile-dropdown clearfix">
+            <div class="mobile-nav-btn ">
+                <span>&equiv;</span>
+            </div>
+            <div class="mobile-nav-content clearfix">
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Gradients</a></li>
+                    <li><a href="">Transitions</a></li>
+                    <li><a href="">Animations</a></li>
+                    <li><a href="">Transformations</a></li>
+                    <li><a href="">Masks</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 
-<div class="nav">
-    <ul>
-        <li><a href="" class="active">Home</a></li>
-        <li><a href="">Gradients</a></li>
-        <li><a href="">Transitions</a></li>
-        <li><a href="">Animations</a></li>
-    </ul>
-</div>
 
 <div class="main-container">
     <div class="header content">
@@ -37,7 +58,7 @@
     <div class="content" id="animation">
         <h1 class="content-title">This is an animation</h1>
         <p class="instruction">Please hover over the black-borderd box</p>
-        <p class="light-text content-subtitle bordered-box">[background-image: linear-gradient(to left,rgba(0,0,0), rgb(60,86,110), rgb(123,242,198), rgba(0,0,0));]</p>
+        <p class="light-text content-subtitle bordered-box" id="animation-box">[background-image: linear-gradient(to left,rgba(0,0,0), rgb(60,86,110), rgb(123,242,198), rgba(0,0,0));]</p>
         <button>Show more</button>
     </div>
 
